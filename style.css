@@ -1,0 +1,429 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    /* overflow-y: hidden; */
+    /* overflow-x: hidden; */
+}
+
+header{
+    background-color: black;
+    padding: 1rem 2rem;
+    /* display: flex; */
+    
+}
+.navbar{
+    display: flex;
+    gap:1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1rem;
+    font-weight: bolder;
+    color:white;
+}
+
+.navbar .logo :hover{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1rem;
+    font-weight: bolder;
+    color:white;
+    text-decoration-line: underline;
+    text-decoration-color: #cea608;
+    text-decoration-thickness: 2px;
+}
+
+.logo img{
+    height:20px;
+    width:20px;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+.icons {
+    display: flex;
+    gap: 1rem;
+    
+}
+
+.icon {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.banner {
+    /* position: relative; */
+    /* height: 500px; */
+    /* background: linear-gradient(to bottom, #2f0d0d, #1e0d0d); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.discount-banner {
+    background-color: #3a358a;
+    padding: 0.8rem;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+}
+.discount-banner p{
+    margin-top: 5px;
+}
+
+.discount-banner .links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 0.3rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+.discount-banner .note {
+    display: block;
+    font-size: 0.8rem;
+    color: #ddd;
+    margin-top: 5px;
+}
+
+
+ .new-arrivals h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+.new-arrivals p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+    background-color: white;
+    color: black;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s;
+} 
+
+.btn:hover {
+    background-color: #ddd;
+} 
+
+.background-image {
+    position: relative;
+}
+
+.new-arrivals{
+    position: absolute;
+    top:40%;
+    left:10%;
+}
+
+.lowest-price{
+    background: linear-gradient(to bottom, #d73609, #f4b153);
+    position: relative;
+    padding: 20px;
+    height: 300px;
+   
+}
+
+.lowest-price .heading{
+    position: absolute;
+    top:20%;
+    left:40%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    font-weight: bolder;
+    
+}
+.para{
+    position: absolute;
+    top:40%;
+    left:43%;
+    text-align: center;
+    padding: 10px;
+}
+
+.btn-shop{
+    text-align: center;
+    padding: 10px;
+    justify-content: center;
+    position: absolute;
+    top:55%;
+    left:50%;
+    color:#1e0d0d;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.main-div{
+    display: flex;
+    gap:10;
+    /* background-color: #d73609; */
+    color: black;
+    margin: 20px;
+    position: relative;
+}
+
+.palermo{
+    width:100%;
+    height: 400px;
+    background-color: rgb(214, 214, 214);
+    margin-top: 10px;  
+}
+.picture img{
+    width:900px;
+    height:500px;
+    z-index:-2;
+}
+.head{
+    padding: 5px;
+    margin: 5px;
+}
+.paragraph{
+    padding: 5px;
+    margin: 10px;
+}
+
+/* .palermo .btn{
+    background-color: #292020;
+    color:white;
+    margin: 10px;
+} */
+.palermo  video{
+    margin-left: 220px;
+}
+
+.palermo-playbook {
+    text-align: center;
+    padding: 2rem 1rem;
+    color:#1e0d0d;
+    margin: 40px;
+}
+
+.palermo-playbook h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.palermo-playbook .subtitle { 
+    color: rgb(30, 20, 20);
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.scroll-container {
+    display: flex;
+    gap: 0.5rem;
+    overflow-x: auto;
+    padding: 1rem 0;
+    scrollbar-width: thin;
+    scrollbar-color: #ccc #f1f1f1;
+}
+
+.scroll-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+}
+
+.card {
+    min-width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    background-color: white;
+}
+
+.card img {
+    width: 100%;
+    /* height: auto; */
+    height:80%;
+}
+
+.card p {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.btn:hover {
+    background-color: #333;
+}
+
+
+.FentyPuma{
+    position: relative;
+}
+
+.FentyPuma .new-arrivals{
+    position: absolute;
+    top:20%;
+    left:10%;
+}
+.FentyPuma img{
+    width: 100%;
+    height:500px;
+    margin-bottom: 20px;
+}
+
+.shoes-collections{
+    margin-top: 20px;
+}
+
+.scroll-containers {
+    display: flex;
+    gap: 0.5rem;
+    overflow-x: auto;
+    padding: 1rem 0;
+    scrollbar-width: thin;
+    scrollbar-color: #ccc #f1f1f1;
+}
+
+.cards {
+    min-width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    background-color: white;
+}
+
+.cards .img1 {
+    width: 100%;
+    height: auto;
+    /* height:70%; */
+}
+
+/* footer css starts here */
+
+
+/* style.css */
+
+.footer {
+    background-color: #000;
+    padding: 40px 20px;
+    color: #fff;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-section h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer-section a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.footer-section a:hover {
+    color: #ccc;
+}
+
+.social-icons a, .explore-icons a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons img, .explore-icons img {
+    width: 20px;
+    height: 20px;
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.payment-options img, .country img {
+    width: 30px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.country {
+    display: flex;
+    align-items: center;
+}
+
+.country span {
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.footer-bottom p {
+    font-size: 12px;
+    color: #999;
+}
+
