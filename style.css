@@ -117,6 +117,15 @@ header{
     margin-bottom: 1.5rem;
 }
 
+.brandImage {
+    width:100vw;
+    height:900px;
+}
+.brandImage .viratImg{
+    width:100vw;
+    height:900px;
+    background-size: cover;  
+}
 .buttons {
     display: flex;
     gap: 1rem;
@@ -151,7 +160,7 @@ header{
     position: relative;
     padding: 20px;
     height: 300px;
-   
+    margin-top: 20px;
 }
 
 .lowest-price .heading{
@@ -203,7 +212,8 @@ header{
 .picture img{
     width:900px;
     height:500px;
-    z-index:-2;
+    position: relative;
+   
 }
 .head{
     padding: 5px;
@@ -220,7 +230,10 @@ header{
     margin: 10px;
 } */
 .palermo  video{
-    margin-left: 220px;
+    /* margin-left: 220px; */
+    position:relative ;
+    left:100px;
+    z-index: 1;
 }
 
 .palermo-playbook {
@@ -266,11 +279,13 @@ header{
 
 .card {
     min-width: 250px;
+    min-height: 400px;
     border: 1px solid #ddd;
     border-radius: 10px;
     overflow: hidden;
     text-align: center;
     background-color: white;
+    
 }
 
 .card img {
@@ -288,13 +303,12 @@ header{
 .btn {
     display: inline-block;
     padding: 0.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.1rem;
     background-color: black;
     color: white;
     text-decoration: none;
     font-weight: bold;
     border-radius: 3px;
-    padding: 5px;
 }
 
 .btn:hover {
@@ -427,3 +441,363 @@ header{
     color: #999;
 }
 
+/* Mobile (up to 600px) */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px; /* Make text smaller on mobile */
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    .navbar nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .navbar .logo img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .icons {
+        gap: 0.5rem;
+        justify-content: flex-start;
+    }
+
+    .banner {
+        padding: 1rem;
+    }
+
+    .new-arrivals h1 {
+        font-size: 2rem;
+    }
+
+    .new-arrivals p {
+        font-size: 1rem;
+    }
+
+    .viratImg {
+        height: auto;
+        width: 100%;
+    }
+
+    .lowest-price .heading {
+        font-size: 1.5rem;
+    }
+
+    .lowest-price .para {
+        font-size: 1rem;
+    }
+
+    .main-div {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .palermo {
+        width: 100%;
+        height: auto;
+    }
+
+    .picture img {
+        width: 100%;
+        height: auto;
+    }
+
+    .palermo-playbook {
+        margin: 20px 10px;
+    }
+
+    .scroll-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .card {
+        min-width: 100%;
+        height: auto;
+    }
+
+    .card img {
+        height: 60%;
+    }
+
+    .footer {
+        padding: 2rem 1rem;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin: 10px 0;
+    }
+}
+
+/* Tablet (600px - 1024px) */
+@media (max-width: 1024px) {
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .navbar nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .icons {
+        justify-content: flex-start;
+    }
+
+    .banner {
+        padding: 2rem;
+    }
+
+    .viratImg {
+        height: 70%;
+        width: 100%;
+    }
+
+    .new-arrivals h1 {
+        font-size: 2.5rem;
+    }
+
+    .new-arrivals p {
+        font-size: 1.2rem;
+    }
+
+    .lowest-price .heading {
+        font-size: 2rem;
+    }
+
+    .lowest-price .para {
+        font-size: 1.2rem;
+    }
+
+    .main-div {
+        flex-direction: column;
+        gap: 1rem;
+        margin: 0;
+    }
+
+    .palermo {
+        height: auto;
+    }
+
+    .picture img {
+        width: 100%;
+        height: auto;
+    }
+
+    .palermo-playbook {
+        margin: 20px;
+    }
+
+    .scroll-container {
+        flex-direction: column;
+    }
+
+    .card {
+        min-width: 100%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+}
+
+/* Desktop (1024px and above) */
+@media (min-width: 1024px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navbar nav ul {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    .banner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .new-arrivals h1 {
+        font-size: 3rem;
+    }
+
+    .new-arrivals p {
+        font-size: 1.5rem;
+    }
+
+    .viratImg {
+        height: 100%;
+        width: 50%;
+    }
+
+    .lowest-price .heading {
+        font-size: 3rem;
+    }
+
+    .lowest-price .para {
+        font-size: 1.5rem;
+    }
+
+    .main-div {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .palermo {
+        width: 60%;
+        height: auto;
+    }
+
+    .picture img {
+        width: 50%;
+        height: auto;
+    }
+
+    .palermo-playbook {
+        padding: 2rem 5rem;
+    }
+
+    .scroll-container {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .card {
+        min-width: 250px;
+        height: 400px;
+    }
+
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-section {
+        margin: 0 1rem;
+    }
+}
+
+
+/* General responsive adjustments */
+@media (max-width: 1200px) {
+    .new-arrivals h1 {
+        font-size: 2.5rem;
+    }
+    .lowest-price .heading {
+        left: 35%;
+    }
+    .para {
+        left: 38%;
+    }
+    .viratImg {
+        height: 700px;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar nav ul {
+        gap: 1rem;
+    }
+    .navbar nav ul li a {
+        font-size: 0.9rem;
+    }
+    .viratImg {
+        height: 500px;
+    }
+    .lowest-price .heading, .para {
+        left: 30%;
+    }
+    .btn-shop {
+        left: 45%;
+    }
+    .palermo-playbook h2 {
+        font-size: 1.8rem;
+    }
+    .main-div, .scroll-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .palermo {
+        height: auto;
+        text-align: center;
+    }
+    .palermo video {
+        left: 0;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+    .navbar nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .icons {
+        justify-content: center;
+    }
+    .discount-banner p {
+        font-size: 0.9rem;
+    }
+    .new-arrivals h1 {
+        font-size: 2rem;
+    }
+    .lowest-price {
+        padding: 10px;
+        height: auto;
+    }
+    .lowest-price .heading, .para, .btn-shop {
+        position: static;
+        text-align: center;
+    }
+    .viratImg {
+        height: 400px;
+    }
+    .card {
+        min-width: 200px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar nav ul li a {
+        font-size: 0.8rem;
+    }
+    .discount-banner p {
+        font-size: 0.8rem;
+    }
+    .viratImg {
+        height: 300px;
+    }
+    .lowest-price .heading {
+        font-size: 1.5rem;
+    }
+    .btn-shop {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-section {
+        margin-bottom: 1rem;
+    }
+}
